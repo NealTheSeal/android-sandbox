@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/connect"
+          android:icon="@drawable/ndsu_barn"
+          android:title="@string/connect"
+          android:actionViewClass="android.widget.ImageButton"/>
+    <item android:id="@+id/cbj"
+          android:icon="@drawable/ndsu_barn"
+          android:title="@string/cbj" />
+</menu>

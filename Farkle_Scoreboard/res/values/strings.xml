@@ -1,0 +1,19 @@
+<resources>
+
+    <string name="app_name">Farkle!</string>
+	<string name="default_score">0</string>
+	<string name="team1">Team 1</string>
+	<string name="team2">Team 2</string>
+	<string name="turn">\'s turn</string>
+	<string name="add">add</string>
+	<string name="sub">sub</string>
+	<string name="farkle">farkle!</string>
+	<string name="farkles">farkle\'s</string>
+	<string name="button_ok">ok</string>
+	<string name="button_cancel">cancel</string>
+	
+	<string name="arrow">arrow</string>
+	
+	<string name="winning_score">Winning Score</string>
+	<string name="win_description">Enter the winning Score</string>
+</resources>

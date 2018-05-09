@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="40dip"
+        android:paddingRight="40dip"
+        android:paddingTop="10dip">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/team1"
+            android:layout_gravity="left"
+            android:textStyle="bold"
+            android:textSize="25sp" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/team2"
+            android:layout_gravity="right"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </FrameLayout>
+    
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="75dip"
+        android:paddingRight="75dip"
+        android:paddingTop="5dip">
+        
+        <TextView
+            android:id="@+id/team_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_score"
+            android:layout_gravity="left"
+            android:textSize="20sp"/>
+        
+        <TextView
+            android:id="@+id/team_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_score"
+            android:layout_gravity="right"
+            android:textSize="20sp"/>
+    </FrameLayout>
+    
+    <TextView
+        android:id="@+id/turn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#0000FF" 
+        android:text="@string/turn" 
+        android:gravity="center" 
+        android:paddingTop="17dip"/>
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dip" >
+        
+        <ImageButton 
+            android:contentDescription="@string/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/arrow_left"
+            android:onClick="incrementTurn"/>
+        
+        <EditText
+            android:id="@+id/text"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" 
+            android:inputType="number"/>
+        
+        <ImageButton
+            android:contentDescription="@string/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/arrow_right"
+            android:onClick="decrementTurn"/>
+	</FrameLayout>
+	
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dip" 
+        android:paddingLeft="25dip"
+        android:paddingRight="25dip">
+        
+        <Button
+            android:id="@+id/add"
+            android:layout_width="80dip" 
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/add" 
+            android:onClick="add"/>
+        
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="80dip" 
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/farkle" 
+            android:onClick="farkle"/>
+        
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="80dip" 
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/sub" 
+            android:onClick="subtract"/>
+	</FrameLayout>
+	
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="40dip"
+        android:paddingRight="40dip"
+        android:paddingTop="35dip">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/farkles"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#FF0000"/>
+    </FrameLayout>
+    
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="75dip"
+        android:paddingRight="75dip"
+        android:paddingTop="5dip">
+        
+        <TextView
+            android:id="@+id/one_farkles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_score"
+            android:layout_gravity="left"
+            android:textSize="15sp"
+            android:textColor="#FF0000"/>
+        
+        <TextView
+            android:id="@+id/two_farkles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_score"
+            android:layout_gravity="right"
+            android:textSize="15sp"
+            android:textColor="#FF0000"/>
+    </FrameLayout>
+</LinearLayout>

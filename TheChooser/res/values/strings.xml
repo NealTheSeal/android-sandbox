@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">The Chooser</string>
+    <string name="welcome_title">Jeff the Chooser</string>
+    <string name="welcome_description">
+        The chooser has Legendary choosing ability that is known throughout the land!
+        He can make the desicions that are too difficult for the week of heart.
+        He can even make the easy desicions that those named Molly cannot.
+        What would you like him to choose for you?
+    </string>
+    <string name="food">food</string>
+    <string name="activity">activity</string>
+    <string name="empty">***</string>
+
+</resources>
